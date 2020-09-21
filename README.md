@@ -12,7 +12,7 @@ This is a technical documentation page focused on how to use the github workflow
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://starsheriff2.github.io/Technical-Documentatio-FCC-Project/)
 
 ## Authors
 
