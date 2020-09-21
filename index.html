@@ -19,9 +19,11 @@
     </section>
     <section class="main-section" id="Introduction_to_Github_workflow">
       <header><h1>Introduction to Github workflow</h1></header>
-      <p>The guide assumes you already understand what Git is and what it's used for.</p>
-      <p>It assumes you already know how to create a repository using Github and clone it to your 
-        local machine directory</p>
+      <p>The guide assumes you already understand what Git is and what it's used for, know the basic 
+        <a href="https://www.atlassian.com/git/tutorials/comparing-workflows">workflow</a>: how to 
+        create a repository using <a href="https://github.com/"><strong>Github</strong></a>, clone it to your 
+        local machine directory, add files to staging area, commit changes and push them back to your remote 
+        repository.</p>
       <p>The core idea behind the <strong>Feature Branch Workflow</strong> is that all feature development should take 
         place in a dedicated branch instead of the master branch. This encapsulation makes it easy 
         for multiple developers to work on a particular feature without disturbing the main codebase. 
@@ -79,35 +81,59 @@
           git commit</code></li>
       </ul>
     </section>
-    <section class="main-section" id="">
-      <header><h1></h1></header>
-      <p></p>
-      <code>&nbsp</code>
-      <p></p>
+    <section class="main-section" id="Push_feature_branch_to_remote">
+      <header><h1>Push feature branch to remote</h1></header>
+      <p>t’s a good idea to push the feature branch up to the <i>central repository</i>. This 
+        serves as a convenient backup, when collaborating with other developers. This would give 
+        them access to view commits to the new branch.</p>
+      <code>&nbsp git push -u origin new-feature</code>
+      <p>This command pushes <i>new-feature</i> to the central repository (origin), and the 
+        <code>-u</code> flag adds it as a remote tracking branch. After setting up the tracking 
+        branch, <code>git push</code> can be invoked without any parameters to automatically 
+        push the new-feature branch to the central repository.</p>
+      <p>To get feedback on the new feature branch, create a 
+        <a href="https://www.wikihow.com/Create-a-Pull-Request-on-Github"><i>pull request</i></a> 
+        in <strong>Github</strong>. From there, you can add reviewers and make sure everything 
+        is good to go before merging.</p>
     </section>
-    <section class="main-section" id="">
-      <header><h1></h1></header>
-      <p></p>
-      <code>&nbsp</code>
-      <p></p>
+    <section class="main-section" id="Resolve_feedback">
+      <header><h1>Resolve feedback</h1></header>
+      <p>Now teammates comment and approve the <i>pushed commits</i>. Resolve their comments 
+        locally, commit, and push the suggested changes to your remote repository. 
+        Your updates appear in the pull request.</p>
     </section>
-    <section class="main-section" id="">
-      <header><h1></h1></header>
-      <p></p>
-      <code>&nbsp</code>
-      <p></p>
+    <section class="main-section" id="Merge_your_pull_request ">
+      <header><h1>Merge your pull request </h1></header>
+      <p>Before you merge, you may have to resolve merge conflicts if others have made 
+        changes to the repo. When your pull request is approved and conflict-free, you 
+        can add your code to the master branch. Merge from the pull request in Github.</p>
     </section>
-    <section class="main-section" id="">
-      <header><h1></h1></header>
-      <p></p>
-      <code>&nbsp</code>
-      <p></p>
+    <section class="main-section" id="Pull_requests">
+      <header><h1>Pull requests</h1></header>
+      <p>Aside from isolating feature development, branches make it possible to discuss 
+        changes via pull requests. Once someone completes a feature, they don’t immediately 
+        merge it into <i>master</i>. Instead, they push the feature branch to the central 
+        server and file a pull request asking to merge their additions into <i>master</i>. 
+        This gives other developers an opportunity to review the changes before they become 
+        a part of the main codebase.</p>
+      <p>Code review is a major benefit of pull requests, but they’re actually designed to 
+        be a generic way to talk about code. You can think of pull requests as a discussion 
+        dedicated to a particular branch. This means that they can also be used much earlier 
+        in the development process. For example, if a developer needs help with a particular 
+        feature, all they have to do is file a pull request. Interested parties will be 
+        notified automatically, and they’ll be able to see the question right next to the 
+        relevant commits.</p>
+      <p>Once a pull request is accepted, the actual act of publishing a feature is much 
+        the same as in the 
+        <i><a href="https://www.atlassian.com/git/tutorials/comparing-workflows">Centralized 
+          Workflow</a></i>. First, you need to make sure your local <i>master</i> is 
+          synchronized with the upstream <i>master</i>. Then, you merge the feature branch 
+          into <i>master</i> and push the updated master back to the central repository.</p>
     </section>
-    <section class="main-section" id="">
-      <header><h1></h1></header>
-      <p></p>
-      <code>&nbsp</code>
-      <p></p>
+    <section class="main-section" id="Reference">
+      <header><h1>Reference</h1></header>
+      <p>Most of the documentation for this page was extracted from 
+        <a href="https://www.atlassian.com"><Atlassian class="com"></Atlassian></a>.</p>
     </section>
     
   </main>
