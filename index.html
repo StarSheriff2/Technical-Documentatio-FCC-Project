@@ -5,10 +5,112 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/styles.css">
-  <title>Technical Documentation Page: Github Workflow</title>
+  <title>Technical Documentation Page: Git Feature Branch Workflow</title>
 </head>
 <body>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <main id="main-doc">
+    <section class="main-section" id="What_is_Git">
+      <header><h1>What is Git?</h1></header>
+      <p><strong>Git</strong> is a distributed version-control system for tracking changes in source code during 
+        software development. It is designed for coordinating work among programmers, but it 
+        can be used to track changes in any set of files. Its goals include speed, data 
+        integrity, and support for distributed, non-linear workflows.</p>
+    </section>
+    <section class="main-section" id="Introduction_to_Github_workflow">
+      <header><h1>Introduction to Github workflow</h1></header>
+      <p>The guide assumes you already understand what Git is and what it's used for.</p>
+      <p>It assumes you already know how to create a repository using Github and clone it to your 
+        local machine directory</p>
+      <p>The core idea behind the <strong>Feature Branch Workflow</strong> is that all feature development should take 
+        place in a dedicated branch instead of the master branch. This encapsulation makes it easy 
+        for multiple developers to work on a particular feature without disturbing the main codebase. 
+        It also means the master branch will never contain broken code, which is a huge advantage for 
+        continuous integration environments.</p>
+    </section>
+    <section class="main-section" id="How_it_works">
+      <header><h1>How it works</h1></header>
+      <p>The <strong>Feature Branch Workflow</strong> assumes a central repository, and <i>master</i> represents the 
+        official project history. Instead of committing directly on their local master branch, 
+        developers create a new branch every time they start work on a new feature. Feature branches 
+        should have descriptive names, like animated-menu-items or issue-#1061. The idea is to give 
+        a clear, highly-focused purpose to each branch.</p>
+      <p>In addition, feature branches can (and should) be pushed to the central repository. This 
+        makes it possible to share a feature with other developers without touching any official 
+        code. Since <i>master</i> is the only “special” branch, storing several feature branches on the 
+        central repository doesn’t pose any problems. Of course, this is also a convenient way to 
+        back up everybody’s local commits. The following is a walk-through of the <strong>life-cycle of a 
+        feature branch</strong>.</p>
+    </section>
+    <section class="main-section" id="Start_with_the_master_branch">
+      <header><h1>Start with the master branch</h1></header>
+      <p>All feature branches are created off the latest code state of a project. This guide assumes 
+        this is maintained and updated in the <i>master</i> branch.</p>
+        <ul>
+          <li><code> 
+            git checkout master</code></li>
+          <li><code> 
+            git fetch origin</code></li>
+          <li><code> 
+            git reset --hard origin/master</code></li>
+        </ul>
+      <p>This switches the repo to the master branch, pulls the latest commits and resets the repo's 
+        local copy of master to match the latest version.</p>
+    </section>
+    <section class="main-section" id="Create_a_new-branch">
+      <header><h1>Create a new-branch</h1></header>
+      <p>Use a separate branch for each feature or issue you work on. After creating a branch, check 
+        it out locally so that any changes you make will be on that branch.</p>
+      <code>&nbsp git checkout -b new-feature</code>
+      <p>This checks out a branch called new-feature based on master, and the -b flag tells Git to 
+        create the branch if it doesn’t already exist.</p>
+    </section>
+    <section class="main-section" id="Update_add_commit_and_push_changes">
+      <header><h1>Update, add, commit, and push changes</h1></header>
+      <p>On this branch, edit, stage, and commit changes in the usual fashion, building up the 
+        feature with as many commits as necessary. Work on the feature and make commits like you 
+        would any time you use Git.</p>
+      <ul>
+        <li><code> 
+          git status</code></li>
+        <li><code> 
+          git add</code></li>
+        <li><code> 
+          git commit</code></li>
+      </ul>
+    </section>
+    <section class="main-section" id="">
+      <header><h1></h1></header>
+      <p></p>
+      <code>&nbsp</code>
+      <p></p>
+    </section>
+    <section class="main-section" id="">
+      <header><h1></h1></header>
+      <p></p>
+      <code>&nbsp</code>
+      <p></p>
+    </section>
+    <section class="main-section" id="">
+      <header><h1></h1></header>
+      <p></p>
+      <code>&nbsp</code>
+      <p></p>
+    </section>
+    <section class="main-section" id="">
+      <header><h1></h1></header>
+      <p></p>
+      <code>&nbsp</code>
+      <p></p>
+    </section>
+    <section class="main-section" id="">
+      <header><h1></h1></header>
+      <p></p>
+      <code>&nbsp</code>
+      <p></p>
+    </section>
+    
+  </main>
   
 </body>
 </html>

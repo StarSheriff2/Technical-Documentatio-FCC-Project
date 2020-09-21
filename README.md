@@ -5,6 +5,8 @@ This is the Technical Documentation Page Project from Code Camp's Responsive Web
 
 This is a technical documentation page focused on how to use the github workflow for feature branches. It's supposed to be short and more general in scope than a real Technical Documentatio Page. The purpose of the project is to implement successfully **HTML and CSS** techniques taught in the **responsive web design certification**.
 
+Most of the information was extracted in its entirety from [atlassian.com](https://www.atlassian.com/git/tutorials/comparing-workflows/feature-branch-workflow). All credits go to the original author of this document.
+
 ## Built With
 
 - HTML, CSS
